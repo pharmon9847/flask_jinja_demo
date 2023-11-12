@@ -18,7 +18,7 @@ def say_hello():
 
 @app.route('/lucky')
 def lucky_number():
-    num = randint(1, 100)
+    num = randint(1, 10)
     return render_template('lucky.html', lucky_num=num, msg='You are SO lucky!')
 
 
