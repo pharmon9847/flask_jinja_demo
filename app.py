@@ -16,6 +16,11 @@ def say_hello():
     """Shows hello page"""
     return render_template('hello.html')
 
+@app.route('/')
+def home_page():
+    """Shows home page"""
+    return render_template('home.html')
+
 
 @app.route('/lucky')
 def lucky_number():
